@@ -18,10 +18,10 @@ CUDA_CHANNEL              = nvidia
 # The conda channel to use to install pytorch / torchvision
 INSTALL_CHANNEL           = pytorch
 
-PYTHON_VERSION            = 3.8
+PYTHON_VERSION            = 3.9
 PYTORCH_VERSION           = $(shell git describe --tags --always)
 # Can be either official / dev
-BUILD_TYPE                = dev
+BUILD_TYPE                = official
 BUILD_PROGRESS            = auto
 BUILD_ARGS                = --build-arg BASE_IMAGE=$(BASE_IMAGE) \
 							--build-arg PYTHON_VERSION=$(PYTHON_VERSION) \
